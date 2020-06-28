@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
         <module name="search" />
-        <module name="manage" />
         <module name="auth" />
+        <module name="manage" />
         <module name="portal" />
       </profile>
     </annotationProcessing>

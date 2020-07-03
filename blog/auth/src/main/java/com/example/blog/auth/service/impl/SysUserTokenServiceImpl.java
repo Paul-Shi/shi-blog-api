@@ -1,7 +1,7 @@
 package com.example.blog.auth.service.impl;
 
 import com.example.blog.auth.service.SysUserTokenService;
-import com.example.blog.auth.service.TokenGenerator;
+import com.example.blog.auth.TokenGenerator;
 import com.example.blog.common.Result;
 import com.example.blog.common.constants.RediskeyConstants;
 import com.example.blog.common.util.RedisUtils;

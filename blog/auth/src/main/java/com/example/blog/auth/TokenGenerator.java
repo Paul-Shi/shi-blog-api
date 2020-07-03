@@ -1,4 +1,4 @@
-package com.example.blog.auth.service;
+package com.example.blog.auth;
 
 import com.example.blog.common.exception.MyException;
 import com.example.blog.common.exception.enums.ErrorEnum;

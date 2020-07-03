@@ -8,7 +8,12 @@ import lombok.Getter;
 public enum  ErrorEnum {
     // 系统错误
     UNKNOWN(500,"系统内部错误，请联系管理员"),
-    NO_UUID(503,"uuid为空");
+    TOKEN_GENERTOR_ERROR(502,  "token生成失败"),
+    NO_UUID(503,"uuid为空"),
+
+    //登录模块错误
+    CAPTCHA_WARNING(10002, "验证码错误"),
+    USERNAME_OR_PASSWORD_WARNING(10003, "用户名或者密码错误");
 
     private int code;
     private String msg;

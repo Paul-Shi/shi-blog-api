@@ -58,7 +58,7 @@ public class OAuth2Realm extends AuthorizingRealm {
     }
 
     /**
-     * 授权
+     * 授权（验证权限时调用）
      *
      * @param principals
      * @return

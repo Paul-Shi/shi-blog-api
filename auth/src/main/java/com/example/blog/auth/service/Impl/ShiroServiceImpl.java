@@ -80,6 +80,6 @@ public class ShiroServiceImpl implements ShiroService {
      */
     @Override
     public void refreshToken(Integer userId, String accessToken) {
-        sysUserTokenService.refreshToken
+        sysUserTokenService.refreshToken(userId, accessToken);
     }
 }

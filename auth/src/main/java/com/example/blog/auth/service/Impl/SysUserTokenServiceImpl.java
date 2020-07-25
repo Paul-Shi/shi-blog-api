@@ -1,7 +1,9 @@
 package com.example.blog.auth.service.Impl;
 
+import com.example.blog.auth.TokenGenerator;
 import com.example.blog.auth.service.SysUserTokenService;
 import com.example.blog.common.Result;
+import com.example.blog.common.constants.RedisKeyConstants;
 import com.example.blog.common.util.RedisUtils;
 import com.example.blog.entity.sys.SysUserToken;
 import org.apache.commons.lang.StringUtils;
@@ -32,16 +34,39 @@ public class SysUserTokenServiceImpl implements SysUserTokenService {
 
     @Override
     public Result createToken(Integer userId) {
-        String token = TokenGenerator
+        //生成一个token
+        String token = TokenGenerator.generateValue();
+
+        String tokenKey = RedisKeyConstants.MANAGE_SYS_USER_TOKEN + token;
+        String userIdKey = RedisKeyConstants.MANAGE_SYS_USER_TOKEN + userId;
+
+        //判断是否生成token
+        String tokenInRedis = redisUtils.get(userIdKey);
+        if (!StringUtils.isEmpty(tokenInRedis)) {
+            // 将原来的token删除
+            redisUtils.delete(RedisKeyConstants.MANAGE_SYS_USER_TOKEN + tokenInRedis);
+        }
+        // 将token存进redis
+        redisUtils.set(tokenKey, userId, EXPIRE);
+        redisUtils.set(userIdKey, userId, EXPIRE);
+
+        return new Result().put("token", token).put("expire", EXPIRE);
     }
 
     @Override
     public void logout(Integer userId) {
-
+        String userIdKey = RedisKeyConstants.MANAGE_SYS_USER_TOKEN + userId;
+        String token = redisUtils.get(userIdKey);
+        String tokenKey = RedisKeyConstants.MANAGE_SYS_USER_TOKEN + token;
+        redisUtils.delete(userIdKey);
+        redisUtils.delete(tokenKey);
     }
 
     @Override
     public void refreshToken(Integer userId, String token) {
-
+        String tokenKey = RedisKeyConstants.MANAGE_SYS_USER_TOKEN + token;
+        String userIdKey = RedisKeyConstants.MANAGE_SYS_USER_TOKEN + userId;
+        redisUtils.updateExpire(tokenKey);
+        redisUtils.updateExpire(userIdKey);
     }
 }

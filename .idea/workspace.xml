@@ -40,7 +40,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bffd085f-35dd-402a-aca9-eaace0629212" name="Default Changelist" comment="" />
+    <list default="true" id="3200593e-e1e5-4424-8c7b-ec33abcf199c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,65 +65,58 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1f3iTuKR9tzoWHDqAoanyMtuWGf" />
+  <component name="ProjectId" id="1f03IxTYR2SGmg9eTowx7Ib3etB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../T-Blog-API" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager">
-    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="search" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.blog.serach.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.blog.serach.BlogApplication" />
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dbblog-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.dblearn.blog.BlogApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.BlogApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bffd085f-35dd-402a-aca9-eaace0629212" name="Default Changelist" comment="" />
-      <created>1595453187478</created>
+      <changelist id="3200593e-e1e5-4424-8c7b-ec33abcf199c" name="Default Changelist" comment="" />
+      <created>1595341106909</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595453187478</updated>
-      <workItem from="1595453190041" duration="146000" />
-      <workItem from="1595453352841" duration="205000" />
-      <workItem from="1595625510219" duration="569000" />
-      <workItem from="1595626102518" duration="1577000" />
-      <workItem from="1595627708487" duration="1064000" />
-      <workItem from="1595704173063" duration="104000" />
+      <updated>1595341106909</updated>
+      <workItem from="1595341111075" duration="1554000" />
+      <workItem from="1595352514173" duration="1978000" />
+      <workItem from="1595453189302" duration="369000" />
+      <workItem from="1595625481540" duration="596000" />
+      <workItem from="1595626103545" duration="2119000" />
+      <workItem from="1595704173063" duration="1501000" />
+      <workItem from="1595705705783" duration="33000" />
+      <workItem from="1595705794529" duration="5988000" />
     </task>
     <servers />
   </component>
@@ -143,49 +136,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1066" y="201" key="#Inspections" timestamp="1595626963811">
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1595717216498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1066" y="201" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1595626963811" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595627676727">
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595717216498" />
+    <state x="279" y="277" key="FileChooserDialogImpl" timestamp="1595709581377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595627676727" />
-    <state x="1175" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595704250574">
+    <state x="279" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595709581377" />
+    <state x="835" y="133" key="SettingsEditor" timestamp="1595714743815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1175" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595704250558" />
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1595626979621">
+    <state x="835" y="133" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595714743815" />
+    <state x="181" y="121" width="673" height="804" key="find.popup" timestamp="1595712973026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595626979621" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1595453312948">
+    <state x="181" y="121" width="673" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595712973026" />
+    <state x="505" y="185" width="1251" height="661" key="new project wizard" timestamp="1595706182766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595453312948" />
-    <state width="1877" height="493" key="GridCell.Tab.0.bottom" timestamp="1595627690298">
+    <state x="505" y="185" width="1251" height="661" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1595706182766" />
+    <state x="1096" y="244" key="run.anything.popup" timestamp="1595714559214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="493" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595627690298" />
-    <state width="1877" height="493" key="GridCell.Tab.0.center" timestamp="1595627690298">
+    <state x="1096" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595714559214" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1595628077543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="493" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595627690298" />
-    <state width="1877" height="493" key="GridCell.Tab.0.left" timestamp="1595627690298">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="493" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595627690298" />
-    <state width="1877" height="493" key="GridCell.Tab.0.right" timestamp="1595627690298">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="493" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595627690298" />
-    <state x="880" y="167" key="SettingsEditor" timestamp="1595627501968">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="880" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595627501968" />
-    <state x="1096" y="180" width="672" height="676" key="search.everywhere.popup" timestamp="1595626669048">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1096" y="180" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595626669048" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595628077543" />
   </component>
 </project>

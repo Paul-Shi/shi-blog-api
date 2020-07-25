@@ -6,21 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="core" />
-        <module name="search" />
-        <module name="auth" />
-        <module name="manage" />
-        <module name="portal" />
+        <module name="dbblog-search" />
+        <module name="dbblog-core" />
+        <module name="dbblog-portal" />
+        <module name="dbblog-manage" />
+        <module name="dbblog-auth" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="blog" target="1.8" />
+      <module name="dbblog-auth" target="1.8" />
+      <module name="dbblog-core" target="1.8" />
+      <module name="dbblog-manage" target="1.8" />
+      <module name="dbblog-portal" target="1.8" />
+      <module name="dbblog-search" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="auth" options="-parameters" />
-      <module name="core" options="-parameters" />
-      <module name="manage" options="-parameters" />
-      <module name="portal" options="-parameters" />
-      <module name="search" options="-parameters" />
+      <module name="dbblog-auth" options="-parameters" />
+      <module name="dbblog-core" options="-parameters" />
+      <module name="dbblog-manage" options="-parameters" />
+      <module name="dbblog-portal" options="-parameters" />
+      <module name="dbblog-search" options="-parameters" />
     </option>
   </component>
 </project>

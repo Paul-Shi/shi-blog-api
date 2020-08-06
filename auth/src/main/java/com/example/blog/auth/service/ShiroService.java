@@ -7,7 +7,7 @@ import java.util.Set;
 
 public interface ShiroService {
     /**
-     * 获取用户全部权限
+     * 获取用户所有权限
      *
      * @param userId
      * @return
@@ -15,7 +15,7 @@ public interface ShiroService {
     Set<String> getUserPermissions(Integer userId);
 
     /**
-     * 查询token
+     * 查询Token
      *
      * @param token
      * @return

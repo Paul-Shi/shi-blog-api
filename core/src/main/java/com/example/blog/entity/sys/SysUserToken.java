@@ -13,5 +13,4 @@ public class SysUserToken implements Serializable {
     private Integer userId;
 
     private String token;
-
 }

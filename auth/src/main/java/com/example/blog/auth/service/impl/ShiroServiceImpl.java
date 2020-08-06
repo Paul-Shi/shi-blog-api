@@ -1,4 +1,4 @@
-package com.example.blog.auth.service.Impl;
+package com.example.blog.auth.service.impl;
 
 import com.example.blog.auth.service.ShiroService;
 import com.example.blog.auth.service.SysUserTokenService;
@@ -28,25 +28,30 @@ public class ShiroServiceImpl implements ShiroService {
     @Autowired
     private SysUserTokenService sysUserTokenService;
 
+    /**
+     * 获取所有用户的权限
+     *
+     * @param userId
+     * @return
+     */
     @Override
     public Set<String> getUserPermissions(Integer userId) {
         List<String> permsList;
 
-        //系统管理员拥有最高权限
+        //系统管理员，拥有最高权限
         if (SysConstants.SUPER_ADMIN.equals(userId)) {
             List<SysMenu> menuList = sysMenuMapper.selectList(null);
             permsList = new ArrayList<>(menuList.size());
             menuList.forEach(menu -> permsList.add(menu.getPerms()));
         } else {
-            permsList = sysMenuMapper.queryAllPerms(userId);
+            permsList = sysUserMapper.queryAllPerms(userId);
         }
-        //返回用户权限列表
         return permsList.stream()
-                //过滤空置字符串
+                //过滤空置的字符串
                 .filter(perms -> !StringUtils.isEmpty(perms))
-                // 把小的list合并成大的list
+                //把小的list合并成大的list
                 .flatMap(perms -> Arrays.stream(perms.split(",")))
-                // 转换成set集合
+                //转换成set集合
                 .collect(Collectors.toSet());
     }
 
@@ -80,6 +85,6 @@ public class ShiroServiceImpl implements ShiroService {
      */
     @Override
     public void refreshToken(Integer userId, String accessToken) {
-        sysUserTokenService.refreshToken
+        sysUserTokenService.refreshToken(userId, accessToken);
     }
 }

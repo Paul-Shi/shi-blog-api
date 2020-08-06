@@ -2,23 +2,24 @@ package com.example.blog.mapper.sys;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.blog.entity.sys.SysMenu;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+@Mapper
 public interface SysMenuMapper extends BaseMapper<SysMenu> {
     /**
-     * 查询用户所有权限
+     * 查询非按钮的菜单
      *
-     * @param userId
      * @return
      */
-    List<String> queryAllPerms(Integer userId);
+    List<SysMenu> queryNotButtonList();
 
     /**
-     * 查询用户的menuId
+     * 根据parentId查询菜单A
      *
-     * @param userId
+     * @param parentId
      * @return
      */
-    List<Integer> queryAllMenuId(Integer userId);
+    List<SysMenu> queryListParentId(Integer parentId);
 }

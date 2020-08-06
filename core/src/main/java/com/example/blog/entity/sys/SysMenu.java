@@ -1,5 +1,6 @@
 package com.example.blog.entity.sys;
 
+
 import com.baomidou.mybatisplus.annotation.FieldStrategy;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -12,8 +13,9 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
-@ApiModel(value = "SysMenu对象", description = "菜单管理")
+@ApiModel(value="SysMenu对象", description="菜单管理")
 public class SysMenu implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "menu_id", type = IdType.AUTO)
@@ -54,4 +56,7 @@ public class SysMenu implements Serializable {
 
     @TableField(exist=false)
     private List<?> list;
+
+
+
 }

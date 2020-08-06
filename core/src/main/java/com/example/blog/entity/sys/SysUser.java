@@ -18,7 +18,6 @@ import java.util.List;
 @Data
 @ApiModel(value = "SysUser对象", description = "用户管理")
 public class SysUser implements Serializable {
-
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键")

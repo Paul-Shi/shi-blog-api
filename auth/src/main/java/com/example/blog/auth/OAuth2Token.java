@@ -1,7 +1,10 @@
 package com.example.blog.auth;
 
 import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.realm.AuthorizingRealm;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OAuth2Token implements AuthenticationToken {
     private String token;
 

@@ -5,6 +5,7 @@ import com.example.blog.common.exception.enums.ErrorEnum;
 import java.util.HashMap;
 
 public class Result extends HashMap<String, Object> {
+
     public Result() {
         put("code", 200);
         put("msg", "success");
